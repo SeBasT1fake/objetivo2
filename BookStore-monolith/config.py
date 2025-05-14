@@ -6,7 +6,7 @@ db_user = os.environ.get('DB_USER', 'bookstore_user')
 db_password = os.environ.get('DB_PASSWORD', 'bookstore_pass')
 db_name = os.environ.get('DB_NAME', 'bookstore')
 
-SQLALCHEMY_DATABASE_URI = f'mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}'
+SQLALCHEMY_DATABASE_URI = f'mysql+pymysql://{db_user}:{db_password}@{db_host}:5432/{db_name}'
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 SECRET_KEY = os.environ.get('SECRET_KEY', 'secretkey')
 
